@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+/*ALL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+}
+body {
+  background-image: url("/img/Cenario.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+header {
+  padding:1rem 0;
+  text-align: center;
+}
+main {
+  text-align: center;
+}
+/*---FIM---*/
+
+
+
+/*Imagens Poke*/
+.pokemon_image {
+  width: 300px;
+  margin-top: 20.5rem;
+  
+}
+.person-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*---FIM---*/
+
+
+
+
+/*Input and buttons*/
+.input-search {
+    width: 40%;
+    padding: 0.5rem;
+    outline: none;
+    border: 2px solid #3d3d3d;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #363636;
+    font-size: clanp(8px, 5vw, 25px);
+    box-shadow: -3px 4px 0 #27b9c4, -5px 7px 0 #333;
+}
+.buttons{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+button{
+  width: 100px;
+  padding: 0.2rem;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-size: clanp(8px, 5vw, 25px);
+  font-weight: 600;
+  color: rgb(151, 34, 34);
+  background-color: rgb(71, 70, 70);
+  box-shadow: -2px 3px rgb(0, 0, 0), -4px 6px 0 #000;
+    cursor: pointer;
+}
+
+#Next{
+  font-family: cursive;
+  text-transform: uppercase;
+  color: rgb(105, 221, 10);
+}
+#Prev{
+  font-family: cursive;
+  text-transform: uppercase;
+  color: #fc3b00;
+}
+/*---FIM---*/
+
+
+
+/*Pseudoclass*/
+.input-search:focus{
+    box-shadow: -3px 4px 0 #020f81, -5px 7px 0 #333;
+}
+.button:active {
+    color: rgb(252, 252, 252);
+    background-color: #2731c4;
+    box-shadow: inset -3px -3px 0 #222;
+    
+}
+/*---FIM---*/
+
+
+
+
+/*h1 flutuante*/
+.pokemon-data{
+  font-family: 'Rubik Gemstones', cursive;
+
+}
+.wavy{
+  position: relative;
+  display: inline-block;
+  padding-top: 4rem;
+}
+.wavy span{
+  position: relative;
+  display: inline-block;
+  color: rgb(3, 3, 3);
+  text-transform: uppercase;
+  animation: animate 5s ease-in-out infinite;
+  animation-delay: calc(0.1s* var(--i));
+}
+@keyframes animate{
+  0%{
+    transform: translateY(0px);
+  }
+  20%{
+        transform: translateY(-20px);       
+        
+    }
+    40%,100%{
+        transform: translateY(0px);
+        color: #c9441c;
+        text-shadow: 22px 22px 0px rgb(0, 0, 0);
+    }
+}
+  /*---FIM---*/
